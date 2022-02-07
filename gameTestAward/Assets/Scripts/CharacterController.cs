@@ -26,4 +26,12 @@ public class CharacterController : MonoBehaviour
         Vector2 dir = new Vector2(h,v).normalized;
         _rb.velocity = _speed * dir;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            GameManager.Instance.MoveTogether();
+        }
+    }
 }
