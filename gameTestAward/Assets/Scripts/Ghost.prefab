@@ -248,10 +248,10 @@ GameObject:
   - component: {fileID: 6136703587206861835}
   - component: {fileID: 6136703587206861834}
   - component: {fileID: 6136703587206861833}
-  - component: {fileID: 6136703587206861832}
+  - component: {fileID: 4246881831186930035}
   m_Layer: 0
   m_Name: Ghost
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -371,7 +371,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6136703587206861832
+--- !u!114 &4246881831186930035
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -380,8 +380,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6136703587206861831}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 500eac7ff2b60e8428479c2f87d5fe4b, type: 3}
+  m_Script: {fileID: 11500000, guid: 61d1f23f0f7c4f54489b9e560f4a320d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 6136703587206861834}
   _speed: 7
+  _isFollow: 0
